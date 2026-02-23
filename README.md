@@ -260,7 +260,7 @@ xdg-open results/report.html # Linux
 - Maintain page object pattern for better maintainability
 - Use variables for test data
 - Add appropriate tags for test categorization
-- Document complex test scenarios
+- Document complex test scenarios 
 
 ## 📞 Support
 
