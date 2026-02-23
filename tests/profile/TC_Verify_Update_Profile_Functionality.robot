@@ -5,9 +5,20 @@ Resource          ../../resources/pages/login_page.robot
 
 Test Teardown    Close All Browsers
 
+*** Variables ***
+# Test Account Credentials
+${USER_EMAIL}        doe+clerk_test@example.com
+${USER_PASSWORD}     morenttest@12345
+${OTP_CODE}          424242
+
+# Profile Test Data
+${FIRST_NAME}        Mo rent
+${LAST_NAME}         Team Craft
+
 *** Test Cases ***
 TC_Verify_Avatar_User_Profile_Update_name
     [Documentation]    Verify Update profile modal and update Firstname and Lastname with valid values and verify the updated name in profile page. Also reset the name to original values after verification
+    [Tags]    profile    user-profile    critical
 
     common_utility.Launch Application
     login_page.Login As A Valid User    ${USER_EMAIL}    ${USER_PASSWORD}

@@ -1,0 +1,39 @@
+.DS_Store
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Robot Framework results
+results/*.html
+results/*.xml
+results/*.log
+results/screenshots/
+results/selenium-screenshot-*.png
+
+# Log files (all locations)
+*.log
+log.html
+report.html
+output.xml
+selenium-screenshot-*.png
+
+# Screenshot files (all locations)
+screenshots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
